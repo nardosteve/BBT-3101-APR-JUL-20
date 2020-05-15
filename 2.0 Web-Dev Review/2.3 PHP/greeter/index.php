@@ -44,7 +44,6 @@
               </svg>
               <span>Salimia Me</span>
             </button>
-
           </div>
         </form>
       </div>
