@@ -56,9 +56,8 @@ $student_list_gcse = [
 #3D Array
 $d_3d = [
   ["Stephen", [1,4]],
-  ["Fredrick", [1,5]
+  ["Fredrick", [1,5]],
 ];
-
 
 echo "<br>";
 echo $student_list_gcse[2][2];
@@ -66,10 +65,12 @@ echo "<br>";
 echo $student_list_gcse[1][2];
 
 #accesing 3D values
-$d_3d[0][0][0];
+echo $d_3d[0][0][0];
+echo "<br>";
+echo $d_3d[0][1][0];
 
 
-
+#Copyright Stephen Mungai Muroki 2020
 
 
 
