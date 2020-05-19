@@ -18,4 +18,51 @@ while($name_length <= 0){
   $name_length = $name_length - 1;
 }
 //framework
-echo $options[$final_int_pos];
+//echo $options[$final_int_pos];
+
+$str_one = "a string";
+$str_two = 'a string';
+//printing out..
+$str_one;
+//print($str_two);
+
+#inbuilt functions..standard library
+
+$dirty_string="Douglas%20Bitok";
+
+#takes a none or number of arguments
+#does something
+#returns an output(echo '' or return '33
+#parameter vs argument
+#function str_upper($string){
+#  return ucwords(strtolower($string));
+#}
+
+#str_upper($dirty_string);
+
+$dirty_string = str_replace("%20","<br>",$dirty_string);
+
+$dirty_string;
+
+$unique_name = 'He said, \'Hi\'';
+$unique_name_2 = "He said, 'Hi'";
+
+#substituting variables into strings
+$age = 24;
+$name = "Davie";
+
+$sentence = "My name is ".$name.' and i am'.$age.' years old.';
+
+$sentence_1 = "My name is ${name} and i am ${age} years old";
+
+$sentence_1;
+
+$name = "John Kuria";//100
+$other_name = "Januaris Musyoki";
+
+$space_position = strpos($name,' ');
+$first_name =  substr($name,0,$space_position);
+
+$salutation = "Dear ${first_name}";
+
+echo $salutation;

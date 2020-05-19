@@ -32,11 +32,30 @@
       <div class="mx-auto py-6">
         <form action="process.php" method="GET" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div class="mb-12">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="full-name">
+              Name
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="full-name" name="full-name" type="text" required placeholder="Please enter your full name" pattern="[A-Za-z ]{1,32}" title="Letters,only example {fname lname}">
+          </div>
+
+          <div class="mb-12">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
               Age
             </label>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="age" name="age" type="number" required placeholder="Please enter your age">
           </div>
+
+          <div class="mb-12">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="gender">
+              Gender
+            </label>
+            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="gender" name="gender" required>
+                <option value="">Please select</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </select>
+          </div>
+
           <div class="flex items-center justify-between">
             <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline inline-flex" type="submit">
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
