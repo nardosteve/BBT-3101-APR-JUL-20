@@ -2,35 +2,31 @@
 <html>
 
   <head>
-    <title>Greeter</title>
+    <title>Greeter App</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <?php if( $_GET['greet'] == "yes"): ?>
+      <?php if($_GET['greet'] == "yes"): ?>
+        <div class="flex mx-auto justify-center">
+          <!-- //<img class="w-1/4" src="https://media.giphy.com/media/ah7SIf25AHMkw/giphy.gif" alt="Female"> -->
+          <img class="w-1/4" src="https://media.giphy.com/media/xUySTC3FzXJJW5qQda/giphy.gif" alt="Male">
+        </div>
+        <div class="flex mx-auto rounded w-1/4 items-center justify-center bg-blue-500 text-white text-lg text-center font-bold px-4 py-3 top-3" role="alert">
+          <svg class=" fill-current w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-3.54-4.46a1 1 0 0 1 1.42-1.42 3 3 0 0 0 4.24 0 1 1 0 0 1 1.42 1.42 5 5 0 0 1-7.08 0zM9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+          <p class="text-center"><?="Hello ".$_GET['msg'];?></p>
 
-      <div class="flex mx-auto justify-center">
-        <img class="w-1/4" src="greeter.gif" alt="">
-      </div>
-
-      <div class="flex mx-auto rounded w-1/4 items-center justify-center bg-blue-500 text-white text-lg text-center font-bold px-4 py-3 top-3" role="alert">
-
-        <svg class=" fill-current w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-          <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-3.54-4.46a1 1 0 0 1 1.42-1.42 3 3 0 0 0 4.24 0 1 1 0 0 1 1.42 1.42 5 5 0 0 1-7.08 0zM9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
-        <p><?php //echo "Hello ".$_GET['msg']; ?></p>
-
-        <p class="text-center"><?="Hello ".$_GET['msg'];?></p>
-
-      </div>
-
+        </div>
     <?php endif; ?>
 
     <div class="flex">
 
-      <div class="mx-auto py-6">
-        <form action="process.php" method="GET" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mx-auto py-6 w-full max-w-xs">
+        <form action="process.php" method="GET" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8 ">
           <div class="mb-12">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="full-name">
               Name
@@ -39,7 +35,7 @@
           </div>
 
           <div class="mb-12">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="age">
               Age
             </label>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="age" name="age" type="number" required placeholder="Please enter your age">

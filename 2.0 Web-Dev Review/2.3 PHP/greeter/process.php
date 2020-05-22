@@ -1,8 +1,8 @@
 <?php
-var_dump($_GET); #superglobal(forms) -- update/create
-echo "<br>";
+#var_dump($_GET); #superglobal(forms) -- update/create
+#echo "<br>";
 #var_dump($_SESSION);
-die();#stops execution
+#die();#stops execution
 #stops either
 #die();
 $all_name = $_GET['full-name'];
@@ -19,14 +19,15 @@ if($space_position == false){
 }
 
 #echo $age;
+$title = 'Ms';
 $greeting = $first_name;
 if($age <= 12){
   //redirecting you to another page in PHP
-  header("Location:index.php?msg=Child, ${greeting}&greet=yes");
+  header("Location:index.php?msg=${title}, ${greeting}&greet=yes");
 }else if($age >= 13 and $age <= 19){
-  header("Location:index.php?msg=Teenie, ${greeting}&greet=yes");
+  header("Location:index.php?msg=${title}, ${greeting}&greet=yes");
 }else if($age >= 20 and $age <= 30){
-  header("Location:index.php?msg=Yout, ${greeting}&greet=yes");
+  header("Location:index.php?msg=${title}, ${greeting}&greet=yes");
 }else{
-  header("Location:index.php?msg=Mzito, ${greeting}&greet=yes");
+  header("Location:index.php?msg=${title}, ${greeting}&greet=yes");
 }
