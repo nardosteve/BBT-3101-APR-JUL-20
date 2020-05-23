@@ -9,8 +9,9 @@
 
   <body>
 
-      <?php if($_GET['greet'] == "Male"): ?>
+      <?php if($_GET['greet'] == "yes"): ?>
         <div class="flex mx-auto justify-center">
+          <!-- <img class="w-1/4" src="https://media.giphy.com/media/ah7SIf25AHMkw/giphy.gif" alt="Female"> -->
           <img class="w-1/4" src="https://media.giphy.com/media/xUySTC3FzXJJW5qQda/giphy.gif" alt="Male">
         </div>
         <div class="flex mx-auto rounded w-1/4 items-center justify-center bg-blue-500 text-white text-lg text-center font-bold px-4 py-3 top-3" role="alert">
@@ -18,25 +19,10 @@
             <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-3.54-4.46a1 1 0 0 1 1.42-1.42 3 3 0 0 0 4.24 0 1 1 0 0 1 1.42 1.42 5 5 0 0 1-7.08 0zM9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
           </svg>
           <p class="text-center"><?="Hello ".$_GET['msg'];?></p>
-
         </div>
     <?php endif; ?>
 
-    <?php if($_GET['greet'] == "Female"): ?>
-      <div class="flex mx-auto justify-center">
-        <img class="w-1/4" src="https://media.giphy.com/media/ah7SIf25AHMkw/giphy.gif" alt="Female">
-      </div>
-      <div class="flex mx-auto rounded w-1/4 items-center justify-center bg-blue-500 text-white text-lg text-center font-bold px-4 py-3 top-3" role="alert">
-        <svg class=" fill-current w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-          <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-3.54-4.46a1 1 0 0 1 1.42-1.42 3 3 0 0 0 4.24 0 1 1 0 0 1 1.42 1.42 5 5 0 0 1-7.08 0zM9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
-        <p class="text-center"><?="Hello ".$_GET['msg'];?></p>
-
-      </div>
-  <?php endif; ?>
-
     <div class="flex">
-
       <div class="mx-auto py-6 w-full max-w-xs">
         <form action="process.php" method="GET" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-8 ">
           <div class="mb-12">
@@ -63,7 +49,6 @@
                 <option value="m">Male</option>
             </select>
           </div>
-
           <div class="flex items-center justify-between">
             <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline inline-flex" type="submit">
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -74,7 +59,6 @@
           </div>
         </form>
       </div>
-
     </div>
   </body>
 

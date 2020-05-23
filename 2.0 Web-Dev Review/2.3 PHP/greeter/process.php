@@ -19,24 +19,42 @@ if($space_position == false){
 }
 
 #echo $age;
-$masc_title = 'Mr';
-$fem_title = 'Ms';
+// $masc_title = 'Mr';
+// $fem_title = 'Ms';
 $greeting = $first_name;
-if($age <= 12 and $gender == "Male"){
+// if($age <= 12 and $gender == "Male"){
   //redirecting you to another page in PHP
-  header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
-}else if($age >= 13 and $age <= 19 and $gender == "Male"){
-  header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
-}else if($age >= 20 and $age <= 30 and $gender == "Male"){
-  header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
-}else if($age >= 31 and $gender == "Mayesssle"){
-  header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
-}else if($age <= 12 and $gender == "Female"){
-  header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
-}else if($age >= 13 and $age <= 19 and $gender == "Female"){
-  header("Location:index.php?msg=${fenc_title}, ${greeting}&greet=Female");
-}else if($age >= 20 and $age <= 30 and $gender == "Female"){
-  header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
+//   header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
+// }else if($age >= 13 and $age <= 19 and $gender == "Male"){
+//   header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
+// }else if($age >= 20 and $age <= 30 and $gender == "Male"){
+//   header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
+// }else if($age >= 31 and $gender == "Mayesssle"){
+//   header("Location:index.php?msg=${masc_title}, ${greeting}&greet=Male");
+// }else if($age <= 12 and $gender == "Female"){
+//   header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
+// }else if($age >= 13 and $age <= 19 and $gender == "Female"){
+//   header("Location:index.php?msg=${fenc_title}, ${greeting}&greet=Female");
+// }else if($age >= 20 and $age <= 30 and $gender == "Female"){
+//   header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
+// }else{
+//   header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
+// }
+
+if($age <= 12 and $gender == "Female"){
+  header("Location:index.php?msg=Young-Woman, ${greeting}&greet=yes");
+}else if($age <= 12 and $gender == "Male"){
+  header("Location:index.php?msg=Young-Man, ${greeting}&greet=yes");
+}else if($age <= 13 and $age <= 19 and $gender == "Female"){
+  header("Location:index.php?msg=Teenie, ${greeting}&greet=yes");
+}else if($age <= 13 and $age <= 19 and $gender == "Male"){
+  header("Location:index.php?msg=Teen, ${greeting}&greet=yes");
+}else if($age <= 20 and $age <= 30 and $gender == "Female"){
+  header("Location:index.php?msg=Young-Teenie, ${greeting}&greet=yes");
+}else if($age <= 20 and $age <= 30 and $gender == "Male"){
+  header("Location:index.php?msg=Young-Teen, ${greeting}&greet=yes");
+}else if($age > 31 and $gender == "Female"){
+  header("Location:index.php?msg=Adult-Teenie, ${greeting}&greet=yes");
 }else{
-  header("Location:index.php?msg=${fem_title}, ${greeting}&greet=Female");
+  header("Location:index.php?msg=Adult-Teen, ${greeting}&greet=yes");
 }
