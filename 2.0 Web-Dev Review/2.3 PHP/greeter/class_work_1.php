@@ -16,19 +16,17 @@ multiline comment - documentation
 $_100784 = "Elvis"; //strings
 $e100784 = "Osodo";
 
-$Anthony = "Mwala";
+$Tatyanna = "Mwala";
 $anthony = "Mwaura";
 
 $_Thiarara = 101717; //numbers -- integers
 
-$Brenda = 112487;
+$steve = 112487;
 
 $classmates = true; //boolean
 
 $other_irr = 1.1; //floating points
 
-#readability/consistency
-#camelCase,snack_case,
 #firstName, FirstName,first_name, firstname
 
 
