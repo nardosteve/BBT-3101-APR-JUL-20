@@ -16,8 +16,8 @@ multiline comment - documentation
 $_100784 = "Elvis"; //strings
 $e100784 = "Osodo";
 
-$Anthony = "Mwala";
-$anthony = "Mwaura";
+$hello = "Hi, there!";
+$greeting = "Jambo";
 
 $_Thiarara = 101717; //numbers -- integers
 
