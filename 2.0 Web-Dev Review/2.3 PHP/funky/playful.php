@@ -21,6 +21,6 @@ function NameAgeReturner($name,$age,$greetMe=false){
 //execution of functions - called!
 //By Name
 
-$Nage = NameAgeReturner("Sohail Nadeem",21,true);
+$Nage = NameAgeReturner("Stephen Mungai", 20, true);
 echo "<br/>";
 var_dump($Nage);

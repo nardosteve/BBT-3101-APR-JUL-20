@@ -7,14 +7,14 @@
 
   <head>
     <title>Greeter App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
   <body>
 
       <?php
-      if($_GET['greet'] == "yes"): 
+      if($_GET['greet'] == "yes"):
         ?>
         <div class="flex mx-auto justify-center">
           <!-- <img class="w-1/4" src="https://media.giphy.com/media/ah7SIf25AHMkw/giphy.gif" alt="Female"> -->
