@@ -2,7 +2,7 @@
 // What are objects ? - Is an instance of a class
 // What are classes ? - Blueprint in which individual objects are created
 
-// Example of a Class -> Apple Iphone then the object -> {Iphone 11 Pro, Iphone X etc....} 
+// Example of a Class -> Apple Iphone then the object -> {Iphone 11 Pro, Iphone X etc....}
 
 // Basic Introduction to classes
 class Fruit{
@@ -26,15 +26,14 @@ class Fruit{
 
 }
 
-//Creating objects from the class
+//Creating objects from the class and passing Arguments
 $banana = new Fruit();
 $banana->set_name('Banana');
 $banana->set_color('Yellow');
 $apple = new Fruit();
 $apple->set_name('Apple');
 $apple->set_color('Off-Red');
-//color
-
+//Creating objects from the class and passing Arguments
 
 //Echo the object data
 echo "Name: " . $banana->get_name() ." ,". "Colour: ". $banana->get_color();
